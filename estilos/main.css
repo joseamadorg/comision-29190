@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: white;
+  padding: 20px 10px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.header__logo {
+  max-width: 100%;
+  
+}
+
+
+.header__list {
+  list-style: none;
+  display: flex; 
+  
+}
+
+.header__item {
+  margin: 0px 10px;
+}
+
+.header__link {
+  background: transparent;
+  border-bottom: solid 2px #F25f27;
+  padding: 12px 8px;
+  text-decoration: none;
+  color: #F25f27;
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.4rem;
+  display: block;
+}
+
+.header__link:hover {
+  background: #F25f27;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.hero {
+  background-image: url("../img/nene-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+}
+
+.hero__contenedor {
+  color: white;
+  position: relative;
+  left: 30px;
+  padding: 20px 15px;
+  border-radius: 15px;
+  width: 550px;
+  align-self: center ;
+}
+
+.hero__titulo {
+  font-family: 'Londrina Solid', cursive;
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+.complementoMain {
+  color: white;
+  background-color: #001F45;
+  display: flex;
+  align-items: center;
+  
+}
+
+.complementoMain__contenedor {
+    padding: 60px 40px;
+    flex-basis: 50%; 
+
+}
+
+.complementoMain__video {
+  width: 100%; 
+}
+
+.complementoMain__titulo {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.complementoMain__parrafo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.equipo {
+  background-color: #FF6E00;
+  color: #fff;
+  padding: 60px 40px;
+}
+
+.equipo__contenedor {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.equipo__titulo--grande {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.equipo__miembro {
+  
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8;
+  overflow: hidden;
+}
+
+.equipo__img {
+  
+  border-radius: 50%;
+  max-width: 160px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}
+
+.complementoEquipo {
+  
+  padding: 60px 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.complementoEquipo__contenedor {
+  display: flex;
+  gap: 3rem;
+}
+
+
+.complementoEquipo__img {
+  width: 100%;
+}
+
+.complementoEquipo__contenedor--texto, .complementoEquipo__contenedor--img {
+  width: 100%;
+  flex-basis: 50%; 
+  align-self: center;
+}
+
+.complementoEquipo__titulo {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+}
+
+.complementoEquipo__parrafo {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.footer {
+  padding: 60px 40px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+
+.footer__columna {
+  width: 100%;
+  text-align: center;
+  align-self: center;
+}
+
+.footer__logo {
+  max-width: 200px;
+  margin: auto;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__list a {
+  text-decoration: none;
+  margin: 10px 0px;
+  display: inline-block;
+}
+
+.separador {
+  background: #5222d0;
+  background: linear-gradient(324deg, #5222d0 4%, #441cac 48%, black 86%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5222d0",endColorstr="#000000",GradientType=1);
+  height: 8px;
+  border: none;
+}
+
+.btn {
+  background-color: #FF0033;
+  border: none;
+  color: white;
+  padding: 12px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.equipo__img--azul {
+  border: 10px solid #002047;
+}
+
+.equipo__img--rojo {
+  border: 10px solid #ff0033;
+}
+
+.equipo__img--rosa {
+  border: 10px solid #d1004d;
+}
+
+.equipo__img--gris {
+  border: 10px solid #afc2df;
+}
+
+
+/* GALERIA DE GRID*/
+
+.grillado{
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-flow: dense;
+  gap: 0.5rem; 
+  margin-top: 0.5rem;
+  padding: 0rem 1rem;
+}
+
+.grillado > div > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.grande-span{
+  position: absolute;
+  top: 20px; 
+  left: 5px;
+  background-color: tomato;
+  padding: 0rem 0.8rem;
+}
+
+.horizontal{
+  grid-column: span 2; 
+}
+
+
+.vertical{
+  grid-row: span 2; 
+}
+
+.grande{
+  grid-column: span 2; 
+  grid-row: span 2; 
+  position: relative;
+}
+
+/*MEDIA QUERIES */
+
+
+
+@media screen and (max-width: 768px) {
+  .header, .complementoMain, .complementofade-left__contenedor {
+    flex-direction: column;
+  }
+
+  .hero{
+    grid-template-columns: 1fr;
+  }
+
+  .hero__contenedor{
+    width: 100%;
+  }
+
+  .hero__titulo {
+    font-size: 4rem;
+}
+  
+  .hero__contenedor {
+  left: 0px;
+}
+  
+  .complementoMain__contenedor{
+  padding: 10px; 
+}
+
+  .equipo__contenedor {
+   grid-template-columns: 1fr 1fr;
+}
+
+  .complementoEquipo {
+  padding: 0px;
+}
+
+  .footer {
+  grid-template-columns: 1fr;
+  gap: 2rem; 
+}
+
+  
+}
+
+@media screen and (max-width: 425px) {
+  .header__list {
+    flex-direction: column;
+}
+
+.hero {
+  background-position: right;
+}
+  .grillado{
+    grid-template-columns: 1fr;
+    gap: 0px; 
+}
+
+
+}
+
+
